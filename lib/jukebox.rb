@@ -48,8 +48,6 @@ def play(arr)
     puts "Playing #{selection}"
   elsif selection.to_i > 0 && arr.length >= selection.to_i
     puts "Playing #{arr[selection.to_i-1]}"
-    puts selection.to_i
-    puts selection
   else 
     puts "Invalid input, please try again"
   end
