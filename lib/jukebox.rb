@@ -47,7 +47,7 @@ def play(arr)
   if arr.include?(ans)
     puts "Playing #{ans}"
   elsif arr[ans-1]
-    puts "Playing #{arr[ans-1]}"
+    puts "Playing #{arr[ans.to_i-1]}"
   else 
     puts "Invalid input, please try again"
   end
