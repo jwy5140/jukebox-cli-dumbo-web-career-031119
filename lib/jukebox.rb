@@ -23,7 +23,8 @@ end
 
 def list 
   songs.each_with_index {|x,y|
-    puts y+1 + ". " + x
+    puts "#{y+1}. #{x}"
+  }
 end
 
 def exit_jukebox
