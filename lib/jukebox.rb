@@ -25,6 +25,8 @@ def run(songs)
       play(songs)
     when "exit"
       exit_jukebox
+    else 
+      puts "Invalid command entered."
     end
   end
 end
