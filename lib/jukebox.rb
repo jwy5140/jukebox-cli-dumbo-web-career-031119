@@ -10,6 +10,15 @@ songs = [
   "Amos Lee - Keep It Loose, Keep It Tight"
 ]
 
+def run
+  help 
+  puts "Please enter a command:"
+  ans = gets.chomp
+  while ans != "exit" do
+    puts "Please enter a command:"
+    ans = gets.chomp 
+end
+
 def help 
   puts "I accept the following commands:"
   puts "- help : displays this help message"
