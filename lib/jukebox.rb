@@ -43,7 +43,6 @@ end
 
 def play(arr)
   puts "Please enter a song name or number:"
-  binding.pry
   ans = gets.chomp 
   if arr.include?(ans)
     puts "Playing #{ans}"
