@@ -1,5 +1,3 @@
-require 'pry'
-
 songs = [
   "Phoenix - 1901",
   "Tokyo Police Club - Wait Up",
@@ -46,8 +44,8 @@ end
 def play(arr)
   puts "Please enter a song name or number:"
   ans = gets.chomp 
+  binding.pry
   if arr.include?(ans)
-    binding.pry
     puts "Playing #{ans}"
   elsif arr.length >= ans.to_i
     puts "Playing #{arr[ans.to_i-1]}"
