@@ -24,7 +24,9 @@ def run(songs)
       list(songs)
     when "play"
       play(songs)
-    elsif ans != "exit"
+    when "exit"
+      next
+    else
       puts "Invalid command."
       help 
     end
