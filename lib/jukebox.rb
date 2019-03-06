@@ -43,9 +43,9 @@ end
 
 def play(arr)
   puts "Please enter a song name or number:"
-  ans = gets.chomp 
-  if arr.include?(ans)
-    puts "Playing #{ans}"
+  selection = gets.chomp 
+  if arr.include?(selection)
+    puts "Playing #{selection}"
   elsif arr.length >= ans.to_i
     puts "Playing #{arr[ans.to_i-1]}"
   else 
