@@ -18,14 +18,22 @@ def help
   puts "- exit : exits this program"
 end
 
-def play 
+def play(arr)
+  puts "Please enter a song name or number:"
+  ans = gets.chomp 
+  if arr.include?(ans)
+    puts "Playing #{ans}"
+  else 
+    puts "Invalid input, please try again"
+  end
 end
 
-def list 
-  songs.each_with_index {|x,y|
+def list(arr)
+  arr.each_with_index {|x,y|
     puts "#{y+1}. #{x}"
   }
 end
 
 def exit_jukebox
+  puts "Goodbye"
 end
