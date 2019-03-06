@@ -20,7 +20,15 @@ def run
     case ans
     when "help"
       help 
-      
+    when "list"
+      list(songs)
+    when "play"
+      play(songs)
+    elsif ans != "exit"
+      puts "Invalid command."
+      help 
+    end
+  end
 end
 
 def help 
