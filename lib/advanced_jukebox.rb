@@ -32,6 +32,15 @@ end
 
 
 def play(my_songs)
+  puts "Please enter a song name or number:"
+  selection = gets.chomp 
+  if arr.include?(selection)
+    puts "Playing #{selection}"
+  elsif selection.to_i > 0 && arr.length >= selection.to_i
+    puts "Playing #{arr[selection.to_i-1]}"
+  else 
+    puts "Invalid input, please try again"
+  end
   #this method is slightly different!
   #you should still ask the user for input and collect their song choice
   #this time, only allow user's to input a song name
