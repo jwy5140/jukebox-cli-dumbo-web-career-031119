@@ -49,7 +49,7 @@ def play(arr)
   if arr.include?(ans)
     binding.pry
     puts "Playing #{ans}"
-  elsif arr[ans.to_i-1]
+  elsif arr.length >= ans.to_i
     puts "Playing #{arr[ans.to_i-1]}"
   else 
     puts "Invalid input, please try again"
