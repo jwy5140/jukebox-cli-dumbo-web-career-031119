@@ -17,8 +17,10 @@ def run
   while ans != "exit" do
     puts "Please enter a command:"
     ans = gets.chomp 
-    case jukebox_menu 
-    
+    case ans
+    when "help"
+      help 
+      
 end
 
 def help 
