@@ -46,8 +46,8 @@ def play(arr)
   selection = gets.chomp 
   if arr.include?(selection)
     puts "Playing #{selection}"
-  elsif arr.length >= ans.to_i
-    puts "Playing #{arr[ans.to_i-1]}"
+  elsif arr.length >= selection.to_i
+    puts "Playing #{arr[selection.to_i-1]}"
   else 
     puts "Invalid input, please try again"
   end
