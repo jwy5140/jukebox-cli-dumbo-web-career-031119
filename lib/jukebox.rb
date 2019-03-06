@@ -12,8 +12,6 @@ songs = [
 
 def run(songs)
   help 
-  puts "Please enter a command:"
-  ans = gets.chomp
   while ans != "exit" do
     puts "Please enter a command:"
     ans = gets.chomp 
