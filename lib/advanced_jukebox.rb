@@ -32,12 +32,10 @@ end
 
 
 def play(my_songs)
-  puts "Please enter a song name or number:"
+  puts "Please enter a song name:"
   selection = gets.chomp 
-  if arr.include?(selection)
-    puts "Playing #{selection}"
-  elsif selection.to_i > 0 && arr.length >= selection.to_i
-    puts "Playing #{arr[selection.to_i-1]}"
+  if my_songs.keys.include?(selection)
+    system 'open '
   else 
     puts "Invalid input, please try again"
   end
