@@ -47,7 +47,9 @@ def play(arr)
   if arr.include?(selection)
     puts "Playing #{selection}"
   elsif arr.length >= selection.to_i
-    puts "playing #{arr[selection.to_i-1]}"
+    puts "Playing #{arr[selection.to_i-1]}"
+    puts selection.to_i
+    puts selection
   else 
     puts "Invalid input, please try again"
   end
